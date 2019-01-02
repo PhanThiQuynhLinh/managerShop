@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+       <tiles-definitions>
+       <!-- Client -->
+	<definition name="tiles-denfinition" template="/WEB-INF/views/tiles-template/default.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles-template/header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles-template/footer.jsp"></put-attribute>
+	</definition>
+	<definition name="client.contact" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/contact.jsp"></put-attribute>
+	</definition>
+	<definition name="client.shop" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/shop.jsp"></put-attribute>
+	</definition>
+	<definition name="client.single" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/single.jsp"></put-attribute>
+	</definition>
+	<definition name="client.index" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/index.jsp"></put-attribute>
+	</definition>
+	<definition name="client.content" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/content.jsp"></put-attribute>
+	</definition>
+	<definition name="client.checkout" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/checkout.jsp"></put-attribute>
+	</definition>
+	<definition name="client.success" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/success.jsp"></put-attribute>
+	</definition>
+	<definition name="client.cart" extends="tiles-denfinition">
+		<put-attribute name="content" value="/WEB-INF/views/client/cart.jsp"></put-attribute>
+	</definition>
+	
+	
+	<!-- Server -->
+	<definition name="tiles-denfinition-admin" template="/WEB-INF/views/tiles-template-admin/default.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles-template-admin/header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles-template-admin/footer.jsp"></put-attribute>
+		<put-attribute name="navigation" value="/WEB-INF/views/tiles-template-admin/navigation.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.categorylist" extends="tiles-denfinition-admin">
+		<put-attribute name="content" value="/WEB-INF/views/manager/category_list.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.categoryform" extends="tiles-denfinition-admin">
+		<put-attribute name="content" value="/WEB-INF/views/manager/category_form.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.content" extends="tiles-denfinition-admin">
+		<put-attribute name="content" value="/WEB-INF/views/manager/content.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.login" extends="tiles-denfinition-admin">
+		<put-attribute name="header" value=""></put-attribute>
+		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="navigation" value=""></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/manager/login.jsp"></put-attribute>		
+	</definition>
+	<definition name="admin.productform" extends="tiles-denfinition-admin">
+		<put-attribute name="content" value="/WEB-INF/views/manager/product_form.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.productlist" extends="tiles-denfinition-admin">
+		<put-attribute name="content" value="/WEB-INF/views/manager/product_list.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.receiptitemlist" extends="tiles-denfinition-admin">
+		<put-attribute name="content" value="/WEB-INF/views/manager/receiptItem_list.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
