@@ -21,9 +21,6 @@
 	<definition name="client.index" extends="tiles-denfinition">
 		<put-attribute name="content" value="/WEB-INF/views/client/index.jsp"></put-attribute>
 	</definition>
-	<definition name="client.content" extends="tiles-denfinition">
-		<put-attribute name="content" value="/WEB-INF/views/client/content.jsp"></put-attribute>
-	</definition>
 	<definition name="client.checkout" extends="tiles-denfinition">
 		<put-attribute name="content" value="/WEB-INF/views/client/checkout.jsp"></put-attribute>
 	</definition>
